@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Propiedades text en un div</title>
+
+		<script src="../Lib/jquery-3.1.1.min.js"></script>
+	</head>
+	<body>
+		<div id="midiv">Esto es texto en div</div>	
+		<button id="miboton">Clic aqui</button>
+	</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#miboton').click(function(){
+			//Asi se obtiene el valor que tiene un text
+			$('#midiv').text();
+			//Asi se agrega un texto al div con la id
+			$('#midiv').text('Texto agregado');
+		});
+	});
+</script>
